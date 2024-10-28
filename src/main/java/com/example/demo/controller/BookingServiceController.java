@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/booking")
+@CrossOrigin("https://eziweels.vercel.app/")
 public class BookingServiceController {
     private BookingServicesService bookingServicesService;
     @Autowired

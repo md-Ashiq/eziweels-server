@@ -13,11 +13,12 @@ import java.util.Arrays;
 public class WebCorsConfig {
     @Value("${frontend.url}")
     private String frontendUrl;
+
     @Bean
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.setAllowedOrigins(Arrays.asList(frontendUrl)); // Specify allowed origins here
+        config.setAllowedOrigins(Arrays.asList(frontendUrl, "https://eziweels.vercel.app"));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type", "Accept"));
 
