@@ -12,7 +12,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/booking")
-@CrossOrigin(origins = "http://localhost:5173")
 public class BookingServiceController {
     private BookingServicesService bookingServicesService;
     @Autowired

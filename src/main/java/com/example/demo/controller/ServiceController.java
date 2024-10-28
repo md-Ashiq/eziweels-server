@@ -12,7 +12,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/service")
-@CrossOrigin(origins = "http://localhost:5173")
 public class ServiceController {
     private EzServicesService ezServicesService;
     @Autowired
